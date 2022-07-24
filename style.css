@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@500&family=Bebas+Neue&family=Concert+One&family=Lato&family=Monda&family=Mukta&family=Rajdhani:wght@300&family=Secular+One&display=swap");
+
+/*
+#b71c1c - dark red
+
+light red #ef9a9a
+
+Medium #f44336*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 25px;
+}
+
+header {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(244, 67, 54, 0.6),
+      rgb(239, 154, 154, 0.6)
+    ),
+    url(./image/bg_img.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+}
+
+img {
+  width: 60px;
+  height: 40px;
+  padding: 30px;
+}
+
+.logo-primary-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  font-size: 4rem;
+  letter-spacing: 35px;
+  animation: moveLeft 1.3s ease-in-out;
+}
+
+.logo-primary-second {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: 23px;
+  letter-spacing: 20px;
+  animation: moveRight 1.3s ease-in-out;
+}
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
